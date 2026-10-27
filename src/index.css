@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    color: #211B18;
+    background-color: #FAF6F0;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5C1A7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B88A45;
+}
+
+/* Hide scrollbar for clean carousels */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
